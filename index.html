@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎵 Audio QR</title>
+  <title>🎵 Reproduce tu audio</title>
   <style>
     body {
       display: flex;
@@ -21,17 +21,27 @@
       width: 80%;
       max-width: 400px;
     }
+    button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 10px;
+      border: none;
+      background-color: #f39c12;
+      color: white;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
-  <h2> Escucha este audio... 🎧</h2>
-  <audio controls>
-    <source src="https://drive.google.com/file/d/10ZnRhrt4Ov2_WAzlDEOgeH7VGrzMlVn4/view?usp=drive_link" type="audio/mpeg">
+  <h1>🎧 Escucha tu audio</h1>
+  <p>Haz clic en "Reproducir" para escuchar tu audio</p>
+  
+  <audio id="audio" preload="auto">
+    <source src="static/Notita.mp3" type="audio/mpeg">
     Tu navegador no soporta audio.
   </audio>
+
+  <button onclick="document.getElementById('audio').play()">Reproducir audio</button>
 </body>
 </html>
-
-
-
-
