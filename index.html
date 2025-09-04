@@ -64,10 +64,11 @@
 
     playBtn.addEventListener('click', () => {
       audio.play().catch(err => {
-        console.log("❌ Safari bloqueó la reproducción automática:", err);
+        console.log("❌ Tu navegador bloqueó la reproducción automática:", err);
         alert("En iPhone toca el botón ▶ del reproductor arriba 👆");
       });
     });
   </script>
 </body>
 </html>
+
